@@ -1,0 +1,38 @@
+PROCEDURE dotProduct (v1 , v2)
+
+VAR
+    v1 : array_name : ARRAY_OF INTEGER[7];
+    v2 : array_name : ARRAY_OF INTEGER[7];
+    i , j :INTEGER;
+    ps : INTEGER;
+    BEGIN
+     FOR i FROM 0 TO 7   DO
+       FOR j FROM 0 TO 7  DO
+       IF (i = j) THEN
+       ps := ( ps +v1[i]) *  ( ps + v2[j]);
+       END_IF
+       END_FOR
+       END_FOR
+
+
+ALGORITHM vectors
+VAR
+    v1 , v2 : array_name : ARRAY_OF INTEGER[7];
+BEGIN
+
+    read (v1 , v2)
+    v1 + v2 = 0;
+    dotProduct(v1, v2);
+
+END         
+    
+
+
+
+
+
+
+    
+
+
+
